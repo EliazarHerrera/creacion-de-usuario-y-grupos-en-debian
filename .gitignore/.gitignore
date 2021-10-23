@@ -1,0 +1,15 @@
+//iniciamos la maquina virtual y igresamos como root.
+
+//con el siguiente comando crearemos un grupo (groupadd + nombre_grupo) 
+groupadd familia
+
+//Crearemos los usuarios con el comando (useradd + nombre_usuario)
+useradd dinora
+useradd eliazar
+
+//Luego agregaremos los usuarios a los grupos con el comando (adduser + usuario)
+adduser dinora familia
+adduser eliazar familia
+
+//Cambiar nombre al grupo con el comando (groupmod -n + nuevo_nombre + Nombre_anterior)
+groupmod -n hogar familia
